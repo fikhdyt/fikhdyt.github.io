@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portofolio Taufik Hidayat — Web Developer, System Analyst & Graphic Designer.">
+    <title>Portofolio | Taufik Hidayat</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/portofolio.css">
+</head>
+<body>
+
+<header class="header" id="header">
+    <div class="container nav">
+        <a class="brand" href="index.html">
+            <span class="brand-logo">TH</span>
+            <span>TH DIGITAL <b>SOLUTION.</b></span>
+        </a>
+
+        <button class="menu-button" id="menuButton" aria-label="Buka menu" aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <nav class="menu" id="menu">
+            <a href="index.html">Beranda</a>
+            <a href="tentang.html">Tentang</a>
+            <a class="active" href="portofolio.html">Portofolio</a>
+            <a href="jasa.html">Jasa & Joki</a>
+            <a href="kontak.html">Kontak</a>
+            <a class="contact-pill" href="kontak.html"><i class="fa-regular fa-paper-plane"></i> Hubungi Saya</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <!-- HERO PORTOFOLIO -->
+    <section class="portfolio-hero">
+        <div class="hero-glow glow-a"></div>
+        <div class="hero-glow glow-b"></div>
+        <div class="hero-grid"></div>
+
+        <div class="container hero-inner">
+            <div class="hero-copy reveal">
+                <span class="eyebrow"><i class="fa-solid fa-layer-group"></i> 02 — PORTOFOLIO</span>
+                <h1>Karya yang<br><span>punya cerita.</span></h1>
+                <p>
+                    Kumpulan sistem informasi, aplikasi, Web-GIS, dan karya visual
+                    yang saya bangun dari kebutuhan nyata, proses analisis, sampai implementasi.
+                </p>
+                <div class="hero-stats">
+                    <div><strong>08+</strong><span>Project</span></div>
+                    <div><strong>04</strong><span>Bidang</span></div>
+                    <div><strong>∞</strong><span>Ide</span></div>
+                </div>
+            </div>
+
+            <div class="hero-orbit reveal delay">
+                <div class="orbit orbit-1"></div>
+                <div class="orbit orbit-2"></div>
+                <div class="orbit-core">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+                <span class="orbit-tag tag-1"><i class="fa-solid fa-database"></i> Database</span>
+                <span class="orbit-tag tag-2"><i class="fa-solid fa-map"></i> Web-GIS</span>
+                <span class="orbit-tag tag-3"><i class="fa-solid fa-pen-nib"></i> Creative</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- FILTER -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-top reveal">
+                <div>
+                    <span class="section-kicker">SELECTED WORK</span>
+                    <h2>Beberapa karya<br><span>yang saya bangun.</span></h2>
+                </div>
+                <p>Gunakan kategori untuk melihat jenis proyek yang ingin kamu eksplorasi.</p>
+            </div>
+
+            <div class="filters reveal delay" role="tablist" aria-label="Filter portofolio">
+                <button class="filter-btn active" data-filter="all">Semua <span>08</span></button>
+                <button class="filter-btn" data-filter="web">Web & App <span>06</span></button>
+                <button class="filter-btn" data-filter="gis">Web-GIS <span>01</span></button>
+                <button class="filter-btn" data-filter="creative">Creative <span>01</span></button>
+            </div>
+
+            <div class="portfolio-grid">
+
+                <!-- PROYEK 1: SIGADIT -->
+                <article class="project-card featured reveal" data-category="gis">
+                    <div class="project-visual" style="padding: 0;">
+                        <img src="assets/img/web-gis-sigadit.jpeg" alt="Web-GIS SIGADIT" style="width: 100%; height: 100%; object-fit: cover; object-position: top; position: absolute; inset: 0;">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-top">
+                            <span class="project-type">01 / WEB-GIS</span>
+                            <span class="project-year">FEATURED</span>
+                        </div>
+                        <h3>Web-GIS SIGADIT</h3>
+                        <div class="tech-tags"><span>Laravel</span><span>Leaflet.js</span><span>K-Means</span></div>
+                        <p>Sistem Informasi Geografis untuk pemetaan potensi kecanduan gadget di Kecamatan Sobang dengan implementasi algoritma K-Means Clustering untuk pengelompokan data spasial.</p>
+                        <button class="project-link" data-modal="sigadit">Lihat detail <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </article>
+
+                <!-- PROYEK 2: E-ARSIP DISKOMSANTIK -->
+                <article class="project-card reveal" data-category="web">
+                    <div class="project-visual" style="padding: 0;">
+                        <img src="assets/img/arsip-surat.jpeg" alt="Sistem E-Arsip" style="width: 100%; height: 100%; object-fit: cover; object-position: top; position: absolute; inset: 0;">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-top"><span class="project-type">02 / WEB APP</span><span>GOV</span></div>
+                        <h3>Sistem E-Arsip DISKOMSANTIK</h3>
+                        <div class="tech-tags"><span>PHP Native</span><span>MySQL</span><span>Bootstrap</span></div>
+                        <p>Aplikasi pengarsipan dokumen digital untuk mempermudah digitalisasi dan manajemen arsip saat magang di DISKOMSANTIK Kabupaten Pandeglang.</p>
+                        <button class="project-link" data-modal="earsip_kominfo">Lihat detail <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </article>
+
+                <!-- PROYEK 3: S-DISI -->
+                <article class="project-card reveal" data-category="web">
+                    <div class="project-visual" style="padding: 0;">
+                        <img src="assets/img/s-disi.jpeg" alt="Sistem Kedisiplinan Siswa" style="width: 100%; height: 100%; object-fit: cover; object-position: top; position: absolute; inset: 0;">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-top"><span class="project-type">03 / WEB APP</span><span>EDUCATION</span></div>
+                        <h3>SPK Kedisiplinan (S-DISI)</h3>
+                        <div class="tech-tags"><span>PHP</span><span>MySQL</span><span>SPK MOORA</span></div>
+                        <p>Sistem pendukung keputusan berbasis web untuk mengelola tingkat kedisiplinan siswa menggunakan metode perhitungan SPK MOORA.</p>
+                        <button class="project-link" data-modal="sdisi">Lihat detail <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </article>
+
+                <!-- PROYEK 4: SISTEM PAKAR GIGI -->
+                <article class="project-card reveal" data-category="web">
+                    <div class="project-visual" style="padding: 0;">
+                        <img src="assets/img/sistem-pakar-gigi.jpeg" alt="Sistem Pakar Diagnosa Gigi" style="width: 100%; height: 100%; object-fit: cover; object-position: top; position: absolute; inset: 0;">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-top"><span class="project-type">04 / WEB APP</span><span>HEALTH</span></div>
+                        <h3>Sistem Pakar Diagnosa Gigi</h3>
+                        <div class="tech-tags"><span>PHP</span><span>MySQL</span><span>Sistem Pakar</span></div>
+                        <p>Aplikasi sistem pakar berbasis web untuk membantu mendiagnosis penyakit gigi dan mulut berdasarkan gejala yang dialami oleh pasien.</p>
+                        <button class="project-link" data-modal="gigi">Lihat detail <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </article>
+
+                <!-- PROYEK 5: INVENTARIS DPRD -->
+                <article class="project-card reveal" data-category="web">
+                    <div class="project-visual" style="padding: 0;">
+                        <img src="assets/img/inventaris.jpeg" alt="Sistem Inventaris DPRD" style="width: 100%; height: 100%; object-fit: cover; object-position: top; position: absolute; inset: 0;">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-top"><span class="project-type">05 / WEB APP</span><span>MANAGEMENT</span></div>
+                        <h3>Sistem Inventaris Barang DPRD</h3>
+                        <div class="tech-tags"><span>PHP / Laravel</span><span>MySQL</span><span>Dashboard</span></div>
+                        <p>Sistem pendukung keputusan inventaris untuk memantau pengadaan, mengelola stok barang masuk dan keluar di lingkungan Sekretariat DPRD.</p>
+                        <button class="project-link" data-modal="inventaris">Lihat detail <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </article>
+
+                <!-- PROYEK 6: SURAT SEKRETARIAT -->
+                <article class="project-card reveal" data-category="web">
+                    <div class="project-visual" style="padding: 0;">
+                        <img src="assets/img/surat-sekretariat.jpeg" alt="E-Arsip Digital Sekretariat DPRD" style="width: 100%; height: 100%; object-fit: cover; object-position: top; position: absolute; inset: 0;">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-top"><span class="project-type">06 / WEB APP</span><span>SERVICE</span></div>
+                        <h3>E-Arsip Digital DPRD</h3>
+                        <div class="tech-tags"><span>Web App</span><span>PHP</span><span>MySQL</span></div>
+                        <p>Platform pengarsipan digital untuk manajemen surat masuk, surat keluar, dan laporan aktivitas kearsipan di Sekretariat DPRD Pandeglang.</p>
+                        <button class="project-link" data-modal="earsip_dprd">Lihat detail <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </article>
+
+                <!-- PROYEK 7: APLIKASI KUSTOM -->
+                <article class="project-card reveal" data-category="web">
+                    <div class="project-visual visual-custom">
+                        <div class="nodes"><i></i><i></i><i></i><i></i><i></i></div>
+                        <div class="custom-core"><i class="fa-solid fa-gears"></i></div>
+                        <span class="custom-label">CUSTOM SYSTEM</span>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-top"><span class="project-type">07 / FULLSTACK</span><span>CUSTOM</span></div>
+                        <h3>Aplikasi Web Kustom</h3>
+                        <div class="tech-tags"><span>Fullstack</span><span>System Analysis</span></div>
+                        <p>Layanan pengembangan sistem informasi dan aplikasi web kustom yang disesuaikan dengan alur bisnis serta kebutuhan spesifik klien atau instansi.</p>
+                        <button class="project-link" data-modal="custom">Lihat detail <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </article>
+
+                <!-- PROYEK 8: DESAIN GRAFIS -->
+                <article class="project-card creative-card reveal" data-category="creative">
+                    <div class="project-visual visual-creative">
+                        <div class="poster poster-1">DESIGN</div>
+                        <div class="poster poster-2">BRAND</div>
+                        <div class="poster poster-3">PRINT</div>
+                        <div class="brush"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-top"><span class="project-type">08 / CREATIVE</span><span>DESIGN</span></div>
+                        <h3>Desain Grafis & Cetak</h3>
+                        <div class="tech-tags"><span>CorelDRAW</span><span>Photoshop</span><span>Canva</span></div>
+                        <p>Pembuatan aset visual untuk promosi, identitas visual, dan acara, mulai dari banner, spanduk, logo instansi, hingga materi KKN.</p>
+                        <button class="project-link" data-modal="design">Lihat detail <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="empty-state" id="emptyState">
+                <i class="fa-regular fa-folder-open"></i>
+                <h3>Belum ada proyek</h3>
+                <p>Coba pilih kategori lainnya.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="portfolio-cta">
+        <div class="container">
+            <div class="cta-card reveal">
+                <div class="cta-glow"></div>
+                <div>
+                    <span class="section-kicker">PUNYA IDE?</span>
+                    <h2>Mari buat sesuatu<br><span>yang berguna.</span></h2>
+                    <p>Kalau kamu punya kebutuhan sistem, desain, atau proyek digital, mari kita diskusikan.</p>
+                </div>
+                <a href="kontak.html" class="cta-button">Mulai ngobrol <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer-wave"></div>
+    <div class="container footer-main">
+        <div class="footer-about">
+            <a class="brand footer-brand" href="index.html"><span class="brand-logo">TH</span><span>TH DIGITAL <b>SOLUTION.</b></span></a>
+            <p>Membantu mengubah ide menjadi solusi digital melalui pengembangan sistem, analisis, Web-GIS, dan desain kreatif.</p>
+            <div class="footer-social">
+                <a href="#"><i class="fa-brands fa-github"></i></a><a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a><a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="footer-column">
+            <h4>Eksplorasi</h4>
+            <a href="index.html">Beranda</a><a href="tentang.html">Tentang Saya</a>
+            <a href="portofolio.html">Portofolio</a><a href="jasa.html">Jasa & Joki</a><a href="kontak.html">Kontak</a>
+        </div>
+        <div class="footer-column contact-column">
+            <h4>Mari Terhubung</h4>
+            <p><i class="fa-regular fa-envelope"></i><span>mistertaufikhidayat@gmail.com</span></p>
+            <p><i class="fa-solid fa-location-dot"></i><span>Sobang, Pandeglang, Banten</span></p>
+            <a class="footer-contact-button" href="kontak.html">Kirim Pesan <span>↗</span></a>
+        </div>
+    </div>
+    <div class="container footer-bottom">
+        <p>© 2026 Taufik Hidayat. All rights reserved.</p><span>Dibuat dengan <i class="fa-solid fa-heart"></i> & kode.</span>
+    </div>
+</footer>
+
+<div class="modal" id="projectModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-box">
+        <button class="modal-close" data-close aria-label="Tutup"><i class="fa-solid fa-xmark"></i></button>
+        <span class="modal-kicker" id="modalKicker">PROJECT</span>
+        <h2 id="modalTitle">Project</h2>
+        <p id="modalText"></p>
+        <div class="modal-tags" id="modalTags"></div>
+        <a href="kontak.html" class="modal-action">Diskusikan proyek <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+</div>
+
+<button class="back-top" id="backTop" aria-label="Kembali ke atas"><i class="fa-solid fa-arrow-up"></i></button>
+<script src="js/portofolio.js"></script>
+</body>
+</html>
